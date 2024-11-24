@@ -1,0 +1,22 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "map-reduce-101"
+version = "0.1.0"
+description = ""
+authors = [ "Odelon Jhey Pacalso <odjhey@gmail.com>",]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+watch = "map_reduce_101:watch"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+watchdog = "^6.0.0"
+toml = "^0.10.2"
+pyyaml = "^6.0.2"
